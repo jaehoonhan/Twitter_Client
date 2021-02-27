@@ -7,7 +7,17 @@
 //
 
 import UIKit
-
+extension UIView {
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+}
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -44,5 +54,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
